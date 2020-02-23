@@ -7,25 +7,106 @@
   <meta name="author" content="">
   <title>new Solutions </title>
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/animate.min.css" rel="stylesheet">
   <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/css/lightbox.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="assets/images/logo.png">
+  <link href="assets/css/selectric.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
-  <div class="gray align-self-start">Aligned flex item</div>
+  <div class="align-items-start sideMenu">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="">
+    </div>
+    <div class="menu">
+      <ul>
+        <li class="nav-item active">
+          <a href="#" class="nav-link"><i class="fa fa-envelope"></i> Messages</a>
+        </li>
+        <li class="nav-item ">
+          <a href="#" class="nav-link"><i class="fa fa-users"></i> Authurs</a>
+        </li>
+        <li class="nav-item ">
+          <a href="#" class="nav-link"><i class="fa fa-envelope"></i> Books</a>
+        </li>
+        <li class="nav-item ">
+          <a href="#" class="nav-link"><i class="fa fa-list-alt"></i> Orders</a>
+        </li>
+        <li class="nav-item ">
+          <a href="#" class="nav-link"><i class="fa fa-cog"></i> Settings</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="align-self-start headerNav">
+    <div class="container-fluid">
+      <div class="profileNav clearfix">
+        <div class="profileCont float-right">
+          <div class="profileImg">
+            <img src="assets/images/1.png" alt="">
+          </div>
+          <h5 class="userName">Eman Samour</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pageBody">
+    <div class="container">
+      <div class="row">
+        <div class="pageHeader">
+          <h4><a href="index.html">Home</a> / Messages</h4>
+          <h2 class="pageTitle">Messages</h2>
+          <span>welcome Back,<span>Eman</span></span>
+        </div>
+        <div class="MessagesBox">
+          <form class="MessagesForm">
+            <div class="radioBox">
+              <label for="now" class="radioLabel"><input type="radio" name="now" id="now" class="radioBtn" checked>Now
+                <span class="checkmark"></span> </label>
+              <label for="Schedule" class="radioLabel"><input type="radio" name="now" id="Schedule"
+                  class="radioBtn">Schedule
+                <span class="checkmark"></span> </label>
+            </div>
+            <div class="form-group select first">
+              <select>
+                <option value=""> Select Author</option>
+                <option value="">Eman</option>
+                <option value="">Eman</option>
+
+              </select>
+            </div>
+            <div class="form-group select">
+              <input type="text" class="form-control" placeholder="Title">
+            </div>
+            <div class="form-group textarea">
+              <textarea name="" id="" class="form-control" placeholder="Message"></textarea>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <script type="text/javascript" src="assets/js/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.selectric.min.js"></script>
 
+  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script>
+    $('select').selectric({
+      disableOnMobile: false,
+      nativeOnMobile: false,
+      dir: "ltr"
+    });
+    $('.selectric-wrapper button').append('<i class="fas fa-chevron-down"></i>');
+  </script>
 </body>
 
 </html>
