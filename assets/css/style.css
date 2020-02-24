@@ -1,9 +1,17 @@
 body{
 font-family: 'Roboto';
-flex: 1 0 auto;display: flex;
-flex-direction: row;
+flex: 1 0 auto;
+display: flex;
 transition: width 0.2s ease;
-
+position: relative;
+}
+.navbar{
+    width:100%;
+    padding: 0;
+}
+.navbar-nav{
+    display: block;
+    width:100%;
 }
 .menuSide{
     flex-direction: column;
@@ -41,7 +49,7 @@ a:hover{
     height:98px;
     backface-visibility: hidden;
     z-index: 99;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -117,6 +125,7 @@ background-color: rgba(91, 189, 183, .1);
         flex: 1 auto;
         background-color:#F3F6F9;
         padding-top:125px;
+        padding-bottom:164px;
     }
     .pageHeader h4{
         font-size:14px;
@@ -241,5 +250,137 @@ margin-top:15px;
       width:100%;
   }
 
+.Footer{
+    display: inline-flex;
+     backface-visibility: hidden;
+     z-index: 99;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+    font-size: 14px;
+   color:#898989;
+    height:75px;
+    background-color: white;
+    box-shadow:10px  2.69px 10px rgba(0,0,0,.15);
+    flex: none;
+    margin-left: 320px;
+    z-index: 88888888888;
+    text-align: center;
+    padding:25px 0;
 
+}
+.Footer span{
+    color:#5BBDB7;
+}
+.sendMessageBtn{
+width:292px;
+height:84px;
+text-align: center;
+color:white;
+background-color: #5BBDB7;
+box-shadow: 0 3px 6px rgba(3, 59, 127, .16);
+margin-top: 40px;
+float: right;
+border:2px solid transparent;
+font-size: 25px;
+font-weight: 500;
+}
+.sendMessageBtn:hover{
+    background-color:white;
+  color: #5BBDB7;
+  border:2px solid #5BBDB7;
+}
+  @media(min-width:320px)and (max-width:1024px){
+     .sideMenu{
+        width:100%;
+        height: auto;
+        background-color: #5BBDB7;
+        height: 100px;
+     }
+     .logo{
+         width:47%;
+     }
+     button.navbar-toggler {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        height: 40px;
+        cursor: pointer;
+        border-radius: 0;
+        opacity: .7;
+        border:1px solid white;
+        text-align: center;
+    }
+    .mobileMenu{
+        cursor: pointer;
+        width: 25px;
+        height: 17px;
+    
+    }
+    .mobileMenu i{
+        position: relative;
+        display: block;
+ 
+        width: 100%;
+        height: 8px;;
+    }
+    .mobileMenu i::after{
+        position: absolute;
+        background-color: white;
+        border-radius: 2px;
+        content: '';
+        display: block;
+        width: 91%;
+        height: 3px;
+    }
+    .headerNav{
+        top:100px;
+    }
+  body{
+    display: block;
+  }
+  .menu {
+    width: 100%;
+    position: absolute;
+    z-index: 99999999999999999999999999999999999999;
+    background-color: white;
+    top: 100px;
+  }
+  .select{
+      width:100%;
+  }
+  .pageBody{
+      padding-left:20px;
+      padding-right: 20px;
+  }
+  .Footer{
+      margin: 0;
+  }
+  .sendMessageBtn{
+      width:100%;
+  }
+}
+  @media(min-width:768px)and (max-width:1024px){
+      .sideMenu{
+          height:120px;
+      }
+      .logo{
+          width:26%;
+      }
+    
+      button.navbar-toggler {
+          width:60px;
+          height:60px;
+      }
+      .mobileMenu{
+          width: 35px;
+        height: 19px;
+        margin: auto;
+      }
+      
+      .sendMessageBtn{
+        width:250px;
+    }
+  }
   

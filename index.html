@@ -20,27 +20,33 @@
     <div class="logo">
       <img src="assets/images/logo.png" alt="">
     </div>
-    <div class="menu">
-      <ul>
-        <li class="nav-item active">
-          <a href="#" class="nav-link"><i class="fa fa-envelope"></i> Messages</a>
-        </li>
-        <li class="nav-item ">
-          <a href="#" class="nav-link"><i class="fa fa-users"></i> Authurs</a>
-        </li>
-        <li class="nav-item ">
-          <a href="#" class="nav-link"><i class="fa fa-envelope"></i> Books</a>
-        </li>
-        <li class="nav-item ">
-          <a href="#" class="nav-link"><i class="fa fa-list-alt"></i> Orders</a>
-        </li>
-        <li class="nav-item ">
-          <a href="#" class="nav-link"><i class="fa fa-cog"></i> Settings</a>
-        </li>
-      </ul>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="mobileMenu"><i></i><i></i><i></i></div>
+    </button>
+    <div class="menu navbar navbar-expand-lg nav ">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a href="#" class="nav-link"><i class="fa fa-envelope"></i> Messages</a>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link"><i class="fa fa-users"></i> Authurs</a>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link"><i class="fa fa-envelope"></i> Books</a>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link"><i class="fa fa-list-alt"></i> Orders</a>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link"><i class="fa fa-cog"></i> Settings</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-  <div class="align-self-start headerNav">
+  <div class=" headerNav">
     <div class="container-fluid">
       <div class="profileNav clearfix">
         <div class="profileCont float-right">
@@ -83,11 +89,16 @@
             <div class="form-group textarea">
               <textarea name="" id="" class="form-control" placeholder="Message"></textarea>
             </div>
+            <button type="submit" class="btn sendMessageBtn">Send</button>
           </form>
 
         </div>
       </div>
     </div>
+  </div>
+  <div class="Footer text-center justify-content-center">
+    <p>2020 Copyrights © <span> Dorrance</span></p>
+
   </div>
 
 
