@@ -33,9 +33,9 @@ a:hover{
 .sideMenu{
     background-color: white;
     box-shadow: 1.59px 9.88px 30px rgba(0,0,0,.1);
-    height:100;
+    height:100vh;
     background-color: white;
-    width:320px;
+    width:20%;
     flex-direction: column;
     display: inline-flex;
     flex: 0 0 auto;
@@ -45,17 +45,17 @@ a:hover{
 .headerNav{
     display: inline-flex;
    background-color:white;
-    width:100%;
     height:98px;
     backface-visibility: hidden;
-    z-index: 99;
+    z-index: 1049;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     box-shadow: 0 5px 10px rgba(0,0,0,.1);
-    padding:25px 0;
+    padding: 25px 0;
     flex: none;
+    margin-left: 19%;
 }
 .logo{
     width:100%;
@@ -126,6 +126,23 @@ background-color: rgba(91, 189, 183, .1);
         background-color:#F3F6F9;
         padding-top:125px;
         padding-bottom:164px;
+        position: relative;
+        z-index: 11;
+    }
+    .whiteOverlay{
+
+        position: absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;
+        z-index: 22;
+        background-color: rgba(255,255,255,.51);
+        display: none;       
+    }
+    .blure{
+        box-shadow: 0 3px 6px rgba(0,0,0,.16);
+      
     }
     .pageHeader h4{
         font-size:14px;
@@ -264,7 +281,7 @@ margin-top:15px;
     background-color: white;
     box-shadow:10px  2.69px 10px rgba(0,0,0,.15);
     flex: none;
-    margin-left: 320px;
+    margin-left: 20%;
     z-index: 88888888888;
     text-align: center;
     padding:25px 0;
@@ -274,8 +291,8 @@ margin-top:15px;
     color:#5BBDB7;
 }
 .sendMessageBtn{
-width:292px;
-height:84px;
+    width: 18.25%;
+    height: 73px;
 text-align: center;
 color:white;
 background-color: #5BBDB7;
@@ -283,7 +300,7 @@ box-shadow: 0 3px 6px rgba(3, 59, 127, .16);
 margin-top: 40px;
 float: right;
 border:2px solid transparent;
-font-size: 25px;
+font-size: 22px;
 font-weight: 500;
 }
 .sendMessageBtn:hover{
@@ -292,7 +309,7 @@ font-weight: 500;
   border:2px solid #5BBDB7;
 }
 .search{
-    width:350px;
+    width:100%;
     height:50px;
     border-radius: 5px;
     border:1px solid #DBDBDB;
@@ -307,6 +324,7 @@ font-weight: 500;
     }
 .searchBox{
     position: relative;
+    width:21.8%;
 }
 .searchBox i{
     position: absolute;
@@ -324,7 +342,7 @@ color:#AAAAAA;
     display: none;
 }
 .table thead tr th{
-    font-size: 18px !important;
+    font-size: 17px !important;
     color:#464A53 !important;
     font-weight: 400 !important;
 }
@@ -342,11 +360,11 @@ color:#AAAAAA;
 td h4{
     display: inline-block;
   font-weight: 400;
-  font-size:16px;
+  font-size:14px;
   vertical-align: bottom;
 }
 .table td{
-    font-size:16px;
+    font-size:14px;
     color:#6A707E;
     vertical-align: middle;
 
@@ -538,6 +556,11 @@ table.dataTable thead th, table.dataTable thead td{
     font-size: 13px;
     line-height: 44px;
 }
+.generateBtn:hover{
+    box-shadow: 1px 2px 10px 5px rgba(0,0,0,.16);
+    color:white;
+
+}
 .btnMargin{
     margin-right:14px;
 }
@@ -549,6 +572,50 @@ table.dataTable thead th, table.dataTable thead td{
     position: absolute;
     z-index: -1;
     opacity: 0;
+}
+.searchBox .selectric-wrapper {
+    width:100%;
+    height:50px;
+    border-radius: 5px;
+    border:1px solid #DBDBDB;
+    margin:30px 0;
+    margin-left:40px;
+    display: block;
+    padding-left: 20px;
+ 
+background-color: white;}
+.searchBox .selectric .label{
+    font-size: 15px;
+    color:#AAAAAA;
+    line-height: 50px;
+}
+.searchBox  .selectric .button{
+    top:3px;
+}
+.bookImg{
+    width:66px;
+    height:54px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.backhome i{
+    font-size:25px;
+    color:#6A707E;
+    line-height: 34px;
+    font-weight: 900;
+    padding-left:20px;
+}
+#AddNewBook .modal-dialog{
+        max-width: 89%;
+        
+}
+#AddNewBook .modal-content{
+    background-color:white;
+}
+.AddBookTitle{
+   color: #464A53;
+   font-size:22px;
+   font-weight: 500;
 }
   @media(min-width:320px)and (max-width:1024px){
       #DataTables_Table_0_wrapper{

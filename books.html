@@ -1,0 +1,325 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>books </title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/logo.png">
+    <link href="assets/css/selectric.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css">
+    <link href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="align-items-start sideMenu">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="">
+        </div>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <div class="mobileMenu"><i></i><i></i><i></i></div>
+        </button>
+        <div class="menu navbar navbar-expand-lg nav ">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link"><i class="fa fa-envelope"></i> Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fa fa-users"></i> Authurs</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link"><i class="fa fa-envelope"></i> Books</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link"><i class="fa fa-list-alt"></i> Orders</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link"><i class="fa fa-cog"></i> Settings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="headerNav">
+        <div class="container-fluid">
+            <div class="backhome float-left">
+                <a href="index.html" title="back"><i class="lni-arrow-left"></i></a>
+            </div>
+            <div class="profileNav clearfix">
+                <div class="profileCont float-right">
+                    <div class="profileImg">
+                        <img src="assets/images/1.png" alt="">
+                    </div>
+                    <h5 class="userName">Eman Samour</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pageBody">
+        <div class="whiteOverlay">
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="pageHeader" style="width:100%;">
+                    <h4><a href="index.html">Home</a> / Books</h4>
+                    <h2 class="pageTitle">Books</h2>
+                    <span>welcome Back,<span>Eman</span></span>
+                    <div class="clearfix tableHeader" style="width:100%;">
+                        <div class="searchBox float-left bookSearch">
+                            <input type="text" class="search" value="search...">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <div class="searchBox float-left AuthorFilter">
+                            <select>
+                                <option value="" selected>Filter by author</option>
+                                <option value="">author</option>
+                                <option value=""> author</option>
+                                <option value="">author</option>
+                                <option value=""> author</option>
+
+                            </select>
+                        </div>
+                        <div class="paginationBox float-right">
+                            <div class="generateCreateButtons">
+                                <a href="#" class="btn generateBtn" data-toggle="modal" data-target="#AddNewBook"> + Add Book</a>
+                            </div>
+                            <nav aria-label="Page navigation clearfix">
+                                <ul class="pagination float-right">
+                                    <li class="page-item"><a class="page-link" href="#">
+                                            <i class="lni-angle-double-left"></i></a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i
+                                                class="lni-angle-double-right"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th width=3%>#No</th>
+                                    <th width=13%>Book Image</th>
+                                    <th>SKU/ISPN</th>
+                                    <th width=11%>Book Title</th>
+                                    <th>Author Name</th>
+                                    <th>PUB Date</th>
+                                    <th>Genre</th>
+                                    <th>Book Version</th>
+                                    <th>Settings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td width=3%>#01</td>
+                                    <td>
+                                        <div class="bookImg"><img src="assets/images/2.png" alt=""></div>
+
+                                    </td>
+                                    <td>978-1-4809-0601-3</td>
+                                    <td>The Mamba Mentality</td>
+                                    <td>William Wonger</td>
+                                    <td>24/1/2020</td>
+                                    <td>Sport</td>
+                                    <td>V1</td>
+                                    <td width=3% class="settingsSec"><a href="javascript:;"
+                                            class="float-right settings"><i class="fa fa-ellipsis-v"></i></a>
+                                        <div class="settingBox">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-eye"></i>view book</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-pencil"></i>Edit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fa fa-trash"></i> Delete</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fa fa-list-alt"></i>Orders</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width=3%>#01</td>
+                                    <td >
+                                        <div class="bookImg"><img src="assets/images/2.png" alt=""></div>
+
+                                    </td>
+                                    <td>978-1-4809-0601-3</td>
+                                    <td>The Mamba Mentality</td>
+                                    <td>William Wonger</td>
+                                    <td>24/1/2020</td>
+                                    <td>Sport</td>
+                                    <td>V1</td>
+                                    <td width=3% class="settingsSec"><a href="javascript:;"
+                                            class="float-right settings"><i class="fa fa-ellipsis-v"></i></a>
+                                        <div class="settingBox">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-eye"></i>view book</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-pencil"></i>Edit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fa fa-trash"></i> Delete</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fa fa-list-alt"></i>Orders</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width=3%>#01</td>
+                                    <td>
+                                        <div class="bookImg"><img src="assets/images/2.png" alt=""></div>
+
+                                    </td>
+                                    <td>978-1-4809-0601-3</td>
+                                    <td>The Mamba Mentality</td>
+                                    <td>William Wonger</td>
+                                    <td>24/1/2020</td>
+                                    <td>Sport</td>
+                                    <td>V1</td>
+                                    <td width=3% class="settingsSec"><a href="javascript:;"
+                                            class="float-right settings"><i class="fa fa-ellipsis-v"></i></a>
+                                        <div class="settingBox">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-eye"></i>view book</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-pencil"></i>Edit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fa fa-trash"></i> Delete</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fa fa-list-alt"></i>Orders</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width=3%>#01</td>
+                                    <td >
+                                        <div class="bookImg"><img src="assets/images/2.png" alt=""></div>
+
+                                    </td>
+                                    <td>978-1-4809-0601-3</td>
+                                    <td>The Mamba Mentality</td>
+                                    <td>William Wonger</td>
+                                    <td>24/1/2020</td>
+                                    <td>Sport</td>
+                                    <td>V1</td>
+                                    <td width=3% class="settingsSec"><a href="javascript:;"
+                                            class="float-right settings"><i class="fa fa-ellipsis-v"></i></a>
+                                        <div class="settingBox">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-eye"></i>view book</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-pencil"></i>Edit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fa fa-trash"></i> Delete</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="fa fa-list-alt"></i>Orders</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+ 
+    </div>
+    <div class="Footer text-center justify-content-center">
+        <p>2020 Copyrights © <span> Dorrance</span></p>
+
+    </div>
+    <div class="modal fade" id="AddNewBook" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h5 class="AddBookTitle"> Add New Book</h5>
+        
+          </div>
+        </div>
+      </div>
+
+
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.selectric.min.js"></script>
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+
+
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+        $('select').selectric({
+            disableOnMobile: false,
+            nativeOnMobile: false,
+            dir: "ltr"
+        });
+        $('.selectric-wrapper button').append('<i class="fas fa-chevron-down"></i>');
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $('.table').DataTable({
+                "ordering": false,
+
+
+
+
+            });
+            $('.select').selectric({
+                disableOnMobile: false,
+                nativeOnMobile: false,
+                dir: "ltr"
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>
