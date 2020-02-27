@@ -248,7 +248,7 @@ margin-top:15px;
   .selectric-wrapper,.form-control{
     background-color: #F3F6F9;
     border: .5px solid #AAAAAA;
-    height:64px;
+    height:60px;
     border-radius: 5px;
   }
   .selectric-items li
@@ -606,16 +606,111 @@ background-color: white;}
     padding-left:20px;
 }
 #AddNewBook .modal-dialog{
-        max-width: 89%;
+    max-width: 75%;
+    margin-left: 22%;
+    top: 22%;
+    border-radius: 10px;
+
         
 }
 #AddNewBook .modal-content{
     background-color:white;
+    padding:60px;
 }
 .AddBookTitle{
    color: #464A53;
    font-size:22px;
-   font-weight: 500;
+   font-weight: 400;
+   margin-bottom:40px;
+}
+button.close {
+    top: -14px;
+    right: -2px;
+    position: absolute;
+    background-color: #F44F4F;
+    border-radius: 51%;
+    opacity: 1;
+    width: 38px;
+    height: 38px;
+        font-weight: 400;
+        color:white;
+        font-size:24px;
+    
+}
+.uploadImgSec{
+    width:50%;
+}
+.AddBookImg{
+    margin:0 auto;
+    width:126px;
+    height:126px;
+    text-align: center;
+}
+.uploadImgText{
+    margin-top:10px;
+    font-size:15px;
+    color:#6A707E;
+    text-align: center;
+}
+#uploadImg{
+display: none;
+}
+#uploadImg{
+    cursor: pointer;
+}
+.addBookForm .form-group{
+    margin-bottom:20px;
+}
+.addBookLeft{
+    width:45%;
+    float: left;
+    display: inline-block;
+  
+}
+.addBookRight{
+    width:45%;
+    float: right;
+   display: inline-block;
+   text-align: center;
+}
+.margin-topForm{
+    margin-top:84px;
+}
+
+.addBookForm .form-control{
+    border:.5px solid #AAAAAA;
+    width:100%;
+    background-color:#F9FBFC;
+}
+.addBookForm .form-control::placeholder{
+    font-size:17px;
+    color:#6A707E;
+}
+.close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover{
+    opacity: 1;
+    color:white;
+}
+.vl{
+    width:1px;
+    height:495px;
+    border-left:1px solid #AAAAAA;
+    display: inline-block;
+    margin-left:60px;
+}
+.addBookBtn{
+    margin-top:125px;
+    background-color: #5BBDB7;
+    color:white;
+    box-shadow:  0 3px 6px rgba(3, 59, 127, .16);
+    width:40%;
+   font-size: 23px;
+    border-radius: 5px;
+    height: 75px;
+}
+.addBookBtn:hover{
+color:white;
+    box-shadow:  0 5px 10px rgba(3, 59, 127, .16);
+    background-color: #119d96;
 }
   @media(min-width:320px)and (max-width:1024px){
       #DataTables_Table_0_wrapper{
@@ -674,6 +769,7 @@ background-color: white;}
     }
     .headerNav{
         top:100px;
+        margin-left:0;
     }
   body{
     display: block;
@@ -698,6 +794,31 @@ background-color: white;}
   .sendMessageBtn{
       width:100%;
   }
+  .searchBox .selectric-wrapper{
+    margin-left:0;
+}
+#AddNewBook  .modal-content{
+    width:100%;
+    padding:10px;
+}
+.addBookLeft,.addBookRight{
+    width:100%;
+}
+#AddNewBook .modal-dialog{
+max-width:95%;
+margin-left:0;
+margin: auto;
+top:18%;
+}
+.vl{
+    display: none;
+}
+.addBookBtn{
+    margin-top:10px;
+}
+.addBookRight{
+    margin-top:20px;
+}
 }
   @media(min-width:768px)and (max-width:1024px){
       .sideMenu{
@@ -720,5 +841,6 @@ background-color: white;}
       .sendMessageBtn{
         width:250px;
     }
+
   }
   
