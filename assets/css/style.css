@@ -32,7 +32,7 @@ a:hover{
 }
 .sideMenu{
     background-color: white;
-    box-shadow: 1.59px 9.88px 30px rgba(0,0,0,.1);
+/*    box-shadow: 1.59px 9.88px 30px rgba(0,0,0,.1);*/
     height:100vh;
     background-color: white;
     width:20%;
@@ -697,7 +697,7 @@ display: none;
     display: inline-block;
     margin-left:60px;
 }
-.addBookBtn{
+.addBookBtn,.AdvanceSearchBtn{
     margin-top:125px;
     background-color: #5BBDB7;
     color:white;
@@ -707,10 +707,60 @@ display: none;
     border-radius: 5px;
     height: 75px;
 }
-.addBookBtn:hover{
+.addBookBtn:hover,.AdvanceSearchBtn:hover{
 color:white;
     box-shadow:  0 5px 10px rgba(3, 59, 127, .16);
     background-color: #119d96;
+}
+.AdvanceSearch{
+    width:50%;
+    margin-top:63px;
+}
+.AdvanceSearch .form-control,.AdvanceSearch .selectric-wrapper{
+    width:45%;
+    background-color: white;
+    display: inline-block;
+    height:45px;
+    float:left;
+    border:.5px solid #DBDBDB;
+    border-radius: 5px;
+}
+.AdvanceSearch .form-control::placeholder,.AdvanceSearch .selectric-wrapper .selectric .label {
+    font-size:13px;
+    color:#AAAAAA;
+}
+.AdvanceSearch .selectric-wrapper{
+    margin-left:45px;
+}
+.AdvanceSearch .form-group {
+    width:100%;
+    margin-bottom:20px;
+}
+.AdvanceSearch .selectric-wrapper .selectric .label {
+    line-height: 50px;
+}
+.AdvanceSearch .selectric-wrapper .selectric .button {
+    top:2px;
+}
+.AdvanceSearch .searchBox{
+width:45%;
+}
+.AdvanceSearch span{
+    font-size:15px;
+    color:#6A707E;
+    margin-bottom:24px;
+}
+.AdvanceSearchBtn{
+    width:12%;
+    height:50px;
+margin-left:20px;
+margin-top:175px;
+}
+ .orderPagination.paginationBox{
+    margin-bottom:0;
+}
+.AdvanceSearch .searchBox .search{
+    margin-bottom:0;
 }
   @media(min-width:320px)and (max-width:1024px){
       #DataTables_Table_0_wrapper{
