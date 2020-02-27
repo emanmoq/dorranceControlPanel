@@ -762,6 +762,57 @@ margin-top:175px;
 .AdvanceSearch .searchBox .search{
     margin-bottom:0;
 }
+.orderDeailsBox{
+    width:100%;
+    background-color:white;
+    border-radius: 3px;
+    padding:25px;
+    height:418px;
+    margin-bottom: 44px;
+    box-shadow:.46px 2.96px 10px rgba(0,0,0,.1)
+}
+
+.bookDetailsTitle{
+    font-size:15px;
+    color:#464A53;
+    padding-bottom:23px;
+    border-bottom:.5px solid #D1D1D1;
+    margin:0;
+}
+.OrderDtailsGroup{
+    margin-bottom:35px;
+    width: 100%;
+}
+.OrderDtailsGroup p{
+    font-size:13px;
+    color:#AAAAAA;
+    margin:0
+}
+.OrderDtailsGroup span{
+    font-size:15px;
+    color:#6A707E
+}
+.OrderDtailsGroup.firstGroup{
+    margin-top:15px;
+
+}
+.col-md-6.no-padding-left{
+    padding-left:0
+}
+.col-md-6.no-padding-right{
+    padding-right:0
+}
+.AddressDetails{
+    margin-top:25px
+}
+.AddressDetails p{
+margin-bottom:20px;
+font-size:15px;
+color:#6A707E;
+}
+.orderDetailsHeader{
+    margin-bottom:50px;
+}
   @media(min-width:320px)and (max-width:1024px){
       #DataTables_Table_0_wrapper{
           width:100%;
@@ -868,6 +919,12 @@ top:18%;
 }
 .addBookRight{
     margin-top:20px;
+}
+.col-md-6.no-padding-left,.col-md-6.no-padding-right{
+  padding:0;
+}
+.orderDeailsBox{
+    height:auto
 }
 }
   @media(min-width:768px)and (max-width:1024px){
