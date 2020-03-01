@@ -605,17 +605,42 @@ background-color: white;}
     font-weight: 900;
     padding-left:20px;
 }
-#AddNewBook .modal-dialog{
+#AddNewBook .modal-dialog,#AuthorModal .modal-dialog{
     max-width: 75%;
     margin-left: 22%;
     top: 22%;
-    border-radius: 10px;
-
-        
+    border-radius: 10px;  
+}
+#AuthorModal .modal-dialog{
+    width:65%;
+    margin-left: 27%;
 }
 #AddNewBook .modal-content{
     background-color:white;
     padding:60px;
+}
+
+#AuthorModal .modal-content{
+    padding:100px;
+    text-align: center;
+    background-color:white;
+
+}
+.AuthorModalSec{
+    padding-top:45px;
+    padding-bottom:55px;
+    border-bottom: .5px solid #AAAAAA;
+    width:100%;
+
+
+}
+.modal-content .AuthorModalSec:last-child{
+    border-bottom: 0;;
+}
+.AuthorModalSec a{
+    text-align: center;
+    font-size:26px;
+    color:#6A707E;
 }
 .AddBookTitle{
    color: #464A53;
@@ -813,6 +838,28 @@ color:#6A707E;
 .orderDetailsHeader{
     margin-bottom:50px;
 }
+#tableEarning thead tr th{
+    font-size:13px !important
+}
+#tableEarning.dataTable thead th{
+    padding-top:5px !important
+}
+label.m-checkbox{
+    margin-bottom:0;
+}
+.table input.form-control{
+    position: unset;
+    opacity: 1;
+    width: 52%;
+    border: 0;
+    display: inline-block;
+    height: 30px;
+}
+.table input.form-control:focus{
+    box-shadow: none;
+    border:0;
+    border:1px solid #5BBDB7;
+}
   @media(min-width:320px)and (max-width:1024px){
       #DataTables_Table_0_wrapper{
           width:100%;
@@ -902,6 +949,7 @@ color:#6A707E;
     width:100%;
     padding:10px;
 }
+
 .addBookLeft,.addBookRight{
     width:100%;
 }
@@ -949,6 +997,31 @@ top:18%;
     margin-bottom: 35px;
     margin-top:35px;
 }
+#AuthorModal  .modal-content{
+    width:100%;
+    padding:10px;
+}
+#AuthorModal .modal-dialog{
+    width:95%;
+    margin-left:0;
+    margin:auto;
+    top:20%;
+    max-width: 95%;;
+    }
+    .AuthorModalSec a{
+font-size: 15px;
+    }
+    .paginationBox{
+        width:100%;
+    }
+    .generateBtn{
+        display: inline-block;
+height:52px;
+        width: 125px
+    }
+    .paginationBox {
+        margin-bottom: 0;
+    }
 }
   @media(min-width:768px)and (max-width:1024px){
       .sideMenu{

@@ -41,11 +41,14 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link"><i class="fa fa-envelope"></i> Books</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item ">
                         <a href="#" class="nav-link"><i class="fa fa-list-alt"></i> Orders</a>
                     </li>
                     <li class="nav-item ">
                         <a href="#" class="nav-link"><i class="fa fa-cog"></i> Settings</a>
+                    </li>
+                    <li class="nav-item active ">
+                        <a href="#" class="nav-link"><i class="fa fa-cog"></i> Earning</a>
                     </li>
                 </ul>
             </div>
@@ -73,16 +76,17 @@
         <div class="container">
             <div class="row">
                 <div class="pageHeader clearfix" style="width:100%;">
-                    <div class="generateCreateButtons float-right">
+                    <!--       <div class="generateCreateButtons float-right">
                         <a href="#" class="btn generateBtn"> + Import
                             Order</a>
-                    </div>
-                    <h4><a href="index.html">Home</a> / Orders</h4>
-                    <h2 class="pageTitle">Orders</h2>
+                    </div>-->
+                    <h4><a href="index.html">Home</a> / Earning </h4>
+                    <h2 class="pageTitle">Earning </h2>
                     <span>welcome Back,<span>Eman</span></span>
-
+    <!--
                     <div class="clearfix tableHeader" style="width:100%;">
-                        <div class="searchPagination clearfix">
+                    
+                            <div class="searchPagination clearfix">
                             <div class="AdvanceSearch float-left">
                                 <span>Advanced filter</span>
                                 <div class="form-group clearfix">
@@ -105,6 +109,7 @@
                             <button class="btn AdvanceSearchBtn float-left">Search</button>
                         </div>
 
+
                         <div class="paginationBox orderPagination float-right">
                             <nav aria-label="Page navigation clearfix">
                                 <ul class="pagination">
@@ -119,145 +124,58 @@
                                 </ul>
                             </nav>
                         </div>
+                      
 
 
                     </div>
+                      -->
                 </div>
                 <div>
-                    <div class="table-responsive">
-                        <table class="table">
+                    <div class="table-responsive scr">
+                        <table class="table table-checkable" id="tableEarning">
                             <thead>
                                 <tr>
-                                    <th width=3%>#No</th>
-                                    <th width=10%>order No</th>
-                                    <th>SKU/ISPN</th>
-                                    <th width=11%>Book Title</th>
-                                    <th>QTY</th>
-                                    <th>Price</th>
-                                    <th>Order Date</th>
-                                    <th>Edition</th>
-                                    <th>name</th>
-                                    <th >comments</th>
-                                    <th>Settings</th>
+                                    <th width=3%></th>
+                                    <th>Earning Scheme</th>
+                                    <th>Direct Consumer</th>
+                                    <th>Direct To Retailer</th>
+                                    <th>Ebook Direct To Consumer</th>
+                                    <th>Ebook Direct To Retailer</th>
+                                    <th>Author Orders</th>
+                                    <th> promotional Orders </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td width=3%>#01</td>
-                                    <td> 122725
+                                    <td width=3%></td>
+                                    <td>Dorrance BOd</td>
+                                    <td>
+                                        <span> %</span> <input type="text" class="form-control">
                                     </td>
-                                    <td>978-1-4809-0601-3</td>
-                                    <td>The Mamba Mentality</td>
-                                    <td>15</td>
-                                    <td>72$</td>
-                                    <td>24/1/2020</td>
-                                    <td>V1</td>
-                                    <td>Vickie King</td>
-                                    <td>PG</td>
-                                    <td width=3% class="settingsSec"><a href="javascript:;"
-                                            class="float-right settings"><i class="fa fa-ellipsis-v"></i></a>
-                                        <div class="settingBox">
-                                            <ul>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-eye"></i>view Order</a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="#"> <i class="fa fa-trash"></i> Delete</a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
+                                    <td>
+                                        <span> %</span> <input type="text" class="form-control">
                                     </td>
+                                    <td>
+                                        <span> %</span> <input type="text" class="form-control">
+                                    </td>
+
+
+                                    <td>
+                                        <span> %</span> <input type="text" class="form-control">
+                                    </td>
+                                    <td>
+                                        <span> %</span> <input type="text" class="form-control">
+                                    </td>
+                                    <td>
+                                        <span> %</span> <input type="text" class="form-control">
+                                    </td>
+
                                 </tr>
 
-                                <tr>
-                                    <td width=3%>#01</td>
-                                    <td> 122725
-                                    </td>
-                                    <td>978-1-4809-0601-3</td>
-                                    <td>The Mamba Mentality</td>
-                                    <td>15</td>
-                                    <td>72$</td>
-                                    <td>24/1/2020</td>
-                                    <td>V1</td>
-                                    <td>Vickie King</td>
-                                    <td>PG</td>
-                                    <td width=3% class="settingsSec"><a href="javascript:;"
-                                            class="float-right settings"><i class="fa fa-ellipsis-v"></i></a>
-                                        <div class="settingBox">
-                                            <ul>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-eye"></i>view Order</a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="#"> <i class="fa fa-trash"></i> Delete</a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width=3%>#01</td>
-                                    <td> 122725
-                                    </td>
-                                    <td>978-1-4809-0601-3</td>
-                                    <td>The Mamba Mentality</td>
-                                    <td>15</td>
-                                    <td>72$</td>
-                                    <td>24/1/2020</td>
-                                    <td>V1</td>
-                                    <td>Vickie King</td>
-                                    <td>PG</td>
-                                    <td width=3% class="settingsSec"><a href="javascript:;"
-                                            class="float-right settings"><i class="fa fa-ellipsis-v"></i></a>
-                                        <div class="settingBox">
-                                            <ul>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-eye"></i>view Order</a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="#"> <i class="fa fa-trash"></i> Delete</a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width=3%>#01</td>
-                                    <td> 122725
-                                    </td>
-                                    <td>978-1-4809-0601-3</td>
-                                    <td>The Mamba Mentality</td>
-                                    <td>15</td>
-                                    <td>72$</td>
-                                    <td>24/1/2020</td>
-                                    <td>V1</td>
-                                    <td>Vickie King</td>
-                                    <td>PG</td>
-                                    <td width=3% class="settingsSec"><a href="javascript:;"
-                                            class="float-right settings"><i class="fa fa-ellipsis-v"></i></a>
-                                        <div class="settingBox">
-                                            <ul>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-eye"></i>view Order</a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="#"> <i class="fa fa-trash"></i> Delete</a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -295,9 +213,16 @@
     <script>
         $(document).ready(function () {
 
-            $('.table').DataTable({
+            $('#tableEarning').DataTable({
                 "ordering": false,
-                responsive: true
+                headerCallback: function (e, a, t, n, s) { e.getElementsByTagName("th")[0].innerHTML = '\n<label class="m-checkbox m-checkbox--single m-checkbox--solid m-checkbox--brand">\n                        <input type="checkbox" value="" class="m-group-checkable">\n   <span></span>\n   </label>' },
+
+                columnDefs: [{
+                    targets: 0, width: "30px",
+                    className: "dt-right", orderable: !1,
+                    render: function (e, a, t, n) { return '\n     <label class="m-checkbox m-checkbox--single m-checkbox--solid m-checkbox--brand">\n                            <input type="checkbox" value="" class="m-checkable">\n                            <span></span>\n                        </label>' }
+                }]
+
 
             });
             $('.select').selectric({
