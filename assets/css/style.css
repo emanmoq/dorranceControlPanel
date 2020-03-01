@@ -345,6 +345,7 @@ color:#AAAAAA;
     font-size: 17px !important;
     color:#464A53 !important;
     font-weight: 400 !important;
+    padding: 2px !important;
 }
 .autImg{
     width:34px;
@@ -504,6 +505,7 @@ table.dataTable tbody tr:hover{
 
 table.dataTable thead th, table.dataTable thead td{
     border-bottom: 0 !important;
+    padding:5px !important
 }
 .table td, .table th{
     border:0 !important;
@@ -860,6 +862,38 @@ label.m-checkbox{
     border:0;
     border:1px solid #5BBDB7;
 }
+.sure {
+    text-align: center;
+
+    margin-top:40px;
+    float: right;
+}
+.sure h5{
+    font-size: 25px;
+    color: #464A53;
+    font-weight: bold
+}
+.confirmBtn{
+    background-color: #8CD8D7;
+    color:white;
+    border-radius: 20px;
+    width:100px;
+}
+.confirmBtn.CancelEarn{
+    background-color: #F44F4F;
+
+}
+.confirmBtn:hover{
+color:white;
+box-shadow: .4px .96px 10px rgba(0,0,0,.1);
+background-color: #75b2b1;
+transition: all .5s;
+}
+.confirmBtn.CancelEarn:hover{
+    background-color: #d34949;
+    transition: all .5s;    
+}
+
   @media(min-width:320px)and (max-width:1024px){
       #DataTables_Table_0_wrapper{
           width:100%;
